@@ -33,6 +33,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 
+<style>
+@keyframes omacBlink {
+  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(31,175,158,0.55); }
+  50% { opacity: 0.6; box-shadow: 0 0 0 12px rgba(31,175,158,0); }
+}
+.btn-blink { animation: omacBlink 1.3s ease-in-out infinite; }
+</style>
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -186,6 +194,39 @@
           <li>Six Sigma Black Belt</li>
           <li>Founder, OMAC Developers</li>
         </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FREE LEARNING MODULES ============ -->
+  <section class="service-panel" id="learning-modules" data-blip>
+    <div class="wrap">
+      <div class="panel-head" data-reveal>
+        <div>
+          <span class="eyebrow">Free Learning Modules</span>
+          <h2>Study smarter — free, self-paced modules built for quality professionals.</h2>
+        </div>
+      </div>
+
+      <div class="card-grid cols-3" data-reveal>
+        <div class="tool-card">
+          <span class="tool-index">01</span>
+          <h3>CPHQ Mastery Module</h3>
+          <p>An interactive, exam-mapped study portal covering the full CPHQ blueprint — concepts, practice MCQs, and quick-reference notes in one place. It's open on a free trial, so you can explore the module before committing to your exam prep. CPHQ is one of the most recognized credentials in healthcare quality, and a structured, exam-aligned resource like this can make the real difference between guessing your way through and passing with confidence.</p>
+          <a href="https://cphq-omac-notes.streamlit.app/" target="_blank" rel="noopener" class="btn btn-gold btn-blink">Start CPHQ Mastery Module Now</a>
+        </div>
+        <div class="tool-card">
+          <span class="tool-index">02</span>
+          <h3>Free ISO 9001 Module</h3>
+          <p>A self-paced, interactive walkthrough of ISO 9001 fundamentals — clauses, QMS principles, and practical application — built for anyone preparing for audits, certification, or just getting up to speed on the standard.</p>
+          <a href="https://syedbaqir291-debug.github.io/Learn-ISO-9001---OMAC/" target="_blank" rel="noopener" class="btn btn-ghost">Explore Free ISO 9001</a>
+        </div>
+        <div class="tool-card">
+          <span class="tool-index">03</span>
+          <h3>OMAC Quiz Maker</h3>
+          <p>A free, no-signup quiz builder — put together custom quizzes for training sessions, exam prep, or team assessments in minutes.</p>
+          <a href="https://syedbaqir291-debug.github.io/OMAC-Quiz-Maker/#/" target="_blank" rel="noopener" class="btn btn-ghost">Try Quiz Maker</a>
+        </div>
       </div>
     </div>
   </section>
@@ -371,6 +412,66 @@
           <p>Upload your data, map your columns, and get instant KPI visualizations and downloadable reports.</p>
           <a href="https://syedbaqir291-debug.github.io/Incident-Dashboard/" target="_blank" rel="noopener" class="btn btn-ghost">Try the Dashboard</a>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CUSTOM INCIDENT REPORTING MODULE ============ -->
+  <section class="service-panel dashboard-panel" id="custom-irs" data-blip>
+    <div class="wrap">
+      <div class="panel-head" data-reveal>
+        <div>
+          <span class="eyebrow">Enterprise Build</span>
+          <h2>Get a Customized Incident Reporting Module — built for your organization.</h2>
+        </div>
+      </div>
+
+      <p class="about-bio" data-reveal>The OMAC Integrated Incident Reporting System (IRS) is a complete closed-loop platform — from the moment an incident is reported to the moment the loop is closed and the trend data feeds back into continuous improvement. It's configured end-to-end around your facility's roles, categories, and escalation paths.</p>
+
+      <div class="card-grid cols-4" data-reveal>
+        <div class="lab-card">
+          <span class="tag">Step 01</span>
+          <h3>User Reporting</h3>
+          <p>Simple, quick, and confidential incident submission for staff and patients — objective description, affected type, and affected person, submitted in seconds.</p>
+        </div>
+        <div class="lab-card">
+          <span class="tag">Step 02</span>
+          <h3>Verification &amp; Triaging</h3>
+          <p>Quality representatives review, verify, and triage each report with built-in analysis tools, automatically creating a registry entry.</p>
+        </div>
+        <div class="lab-card">
+          <span class="tag">Step 03</span>
+          <h3>Assignment &amp; Investigation</h3>
+          <p>Department heads receive assigned cases, conduct investigations, log findings, and assign specific tasks — tracked on their own dashboard.</p>
+        </div>
+        <div class="lab-card">
+          <span class="tag">Step 04</span>
+          <h3>Loop Closure &amp; Improvement</h3>
+          <p>Root cause analysis and action plans feed back into the registry — closing the loop and turning incidents into quality and safety trend data.</p>
+        </div>
+      </div>
+
+      <div class="card-grid cols-4" data-reveal style="margin-top:0.5rem;">
+        <div class="lab-card">
+          <h3>Complete Closed-Loop</h3>
+          <p>Every incident moves through reporting, triage, investigation, and closure — nothing falls through the cracks.</p>
+        </div>
+        <div class="lab-card">
+          <h3>Role-Based Dashboards</h3>
+          <p>Separate views for reporters, quality representatives, and HoDs — each sees only what's relevant to their role.</p>
+        </div>
+        <div class="lab-card">
+          <h3>Summary Analytics</h3>
+          <p>Total incidents, pending investigations, closed loops, and risk levels — all on one live summary dashboard.</p>
+        </div>
+        <div class="lab-card">
+          <h3>Built for Your Workflow</h3>
+          <p>Categories, roles, and thresholds configured to match how your organization actually operates — not a rigid template.</p>
+        </div>
+      </div>
+
+      <div style="text-align:center; margin-top:2rem;" data-reveal>
+        <a href="https://wa.me/923014566652?text=Hi%2C%20I%27m%20interested%20in%20getting%20a%20Customized%20Incident%20Reporting%20Module%20for%20my%20organization." target="_blank" rel="noopener" class="btn btn-primary">Contact OMAC to Make This Module for Your Organization</a>
       </div>
     </div>
   </section>
