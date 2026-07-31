@@ -41,6 +41,35 @@
 }
 .btn-blink { animation: omacBlink 1.3s ease-in-out infinite; }
 
+/* ---------- Nav Webinar CTA (glow + blink neon) ---------- */
+.nav-cta-neon {
+  position: relative;
+  color: var(--paper-100);
+  border: 1px solid var(--gold-400);
+  background: rgba(31,175,158,0.08);
+  animation: navNeonPulse 1.6s ease-in-out infinite;
+}
+@keyframes navNeonPulse {
+  0%, 100% {
+    box-shadow:
+      0 0 4px rgba(111,217,201,0.8),
+      0 0 10px rgba(63,196,179,0.7),
+      0 0 20px rgba(31,175,158,0.55),
+      0 0 34px rgba(31,175,158,0.35);
+    opacity: 1;
+    border-color: var(--gold-400);
+  }
+  50% {
+    box-shadow:
+      0 0 2px rgba(111,217,201,0.4),
+      0 0 6px rgba(63,196,179,0.35),
+      0 0 12px rgba(31,175,158,0.25),
+      0 0 18px rgba(31,175,158,0.15);
+    opacity: 0.75;
+    border-color: var(--gold-300);
+  }
+}
+
 /* ---------- Research Paper box ---------- */
 .research-panel {
   padding: clamp(2rem, 4vw, 3rem) 0;
@@ -208,7 +237,7 @@
     <a href="#contact-teaser">Contact</a>
   </nav>
   <button class="nav-toggle" aria-label="Toggle navigation">MENU</button>
-  <a href="mailto:syedbaqir291@gmail.com" class="nav-cta">S M Baqir</a>
+  <a href="https://omac-webinar.vercel.app/" target="_blank" rel="noopener" class="nav-cta nav-cta-neon">Explore Webinar</a>
 </header>
 
 <main>
@@ -282,13 +311,13 @@
       <div class="about-copy" data-reveal data-reveal-delay="1">
         <span class="eyebrow">Who's Behind OMAC</span>
         <h2>Syed Muhammad Baqir</h2>
-        <p class="credentials-line">MPhil TQM · CQAP ·  · Six Sigma Black Belt</p>
+        <p class="credentials-line">MPhil TQM · CQAP · Six Sigma</p>
         <p class="about-bio">Syed Muhammad Baqir is a healthcare quality and patient safety professional with 8+ years built inside real hospital systems — not behind a consulting slide deck. His work spans Total Quality Management, accreditation standards across JCI, PHC, and SHC, and data-driven process improvement. OMAC by S M Baqir exists to put that same hands-on capability into the hands of other quality teams — through training, technical outsourcing, and purpose-built digital tools.</p>
         <ul class="credential-list">
           <li>MPhil — Total Quality Management</li>
           <li>CQAP Certified</li>
           <li>CHQP </li>
-          <li>Six Sigma Black Belt</li>
+          <li>Six Sigma</li>
           <li>Founder, OMAC Developers</li>
         </ul>
       </div>
