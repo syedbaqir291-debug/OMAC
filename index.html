@@ -74,12 +74,29 @@
 .research-panel {
   padding: clamp(2rem, 4vw, 3rem) 0;
 }
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: clamp(1.2rem, 3vw, 2rem);
+  align-items: stretch;
+}
+@media (max-width: 860px) {
+  .research-grid {
+    grid-template-columns: 1fr;
+  }
+}
 .research-box {
   position: relative;
   border: 1px solid var(--gold-400);
   background: linear-gradient(180deg, var(--navy-800), var(--navy-900));
   padding: clamp(1.8rem, 4vw, 2.8rem);
   box-shadow: 0 0 0 1px rgba(212,175,106,0.08), 0 20px 50px rgba(0,0,0,0.35);
+  display: flex;
+  flex-direction: column;
+}
+.research-box .btn {
+  margin-top: auto;
+  align-self: flex-start;
 }
 .research-tag {
   display: inline-block;
@@ -328,13 +345,23 @@
   <!-- ============ RECENT RESEARCH PAPER ============ -->
   <section class="research-panel" id="research" data-blip>
     <div class="wrap">
-      <div class="research-box" data-reveal>
-        <span class="research-tag">Recent Paper by Syed Muhammad Baqir (OMAC International)</span>
-        <h3 class="research-heading">A New, Objective Rule for Run Chart Astronomical Points</h3>
-        <p class="research-paper-title">The Objective Astronomical Point Rule (OAPR) — informally the "Baqir Rule"</p>
-        <p class="research-paper-subtitle">Syed Muhammad Baqir · MPhil TQM, CQAP · Preprint on SSRN</p>
-        <p class="research-abstract">Run charts use four rules to flag non-random signals, and three of them — shift, trend, and number of runs — rest on clear probability logic. The fourth, the astronomical point, has always come down to a reviewer's gut feel. This paper proposes fixing that: pair every run chart with a boxplot of the same data and use Tukey's IQR fences to call outliers, turning a subjective eyeball test into one fixed, repeatable calculation any two reviewers will agree on.</p>
-        <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7117822" target="_blank" rel="noopener" class="btn btn-gold btn-pulse-slow">Read the Full Paper on SSRN →</a>
+      <div class="research-grid">
+        <div class="research-box" data-reveal>
+          <span class="research-tag">Recent Paper by Syed Muhammad Baqir (OMAC International)</span>
+          <h3 class="research-heading">A New, Objective Rule for Run Chart Astronomical Points</h3>
+          <p class="research-paper-title">The Objective Astronomical Point Rule (OAPR) — informally the "Baqir Rule"</p>
+          <p class="research-paper-subtitle">Syed Muhammad Baqir · MPhil TQM, CQAP · Preprint on SSRN</p>
+          <p class="research-abstract">Run charts use four rules to flag non-random signals, and three of them — shift, trend, and number of runs — rest on clear probability logic. The fourth, the astronomical point, has always come down to a reviewer's gut feel. This paper proposes fixing that: pair every run chart with a boxplot of the same data and use Tukey's IQR fences to call outliers, turning a subjective eyeball test into one fixed, repeatable calculation any two reviewers will agree on.</p>
+          <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7117822" target="_blank" rel="noopener" class="btn btn-gold btn-pulse-slow">Read the Full Paper on SSRN →</a>
+        </div>
+        <div class="research-box" data-reveal>
+          <span class="research-tag">Recent Paper by Syed Muhammad Baqir (OMAC International)</span>
+          <h3 class="research-heading">From Association to Detection: Culture, Outcomes, and OAPR</h3>
+          <p class="research-paper-title">Applying the Objective Astronomical Point Rule to Operationalise Culture–Outcome Relationships in Healthcare Quality Data</p>
+          <p class="research-paper-subtitle">Syed Muhammad Baqir · MPhil TQM, CQAP · Preprint on SSRN</p>
+          <p class="research-abstract">A major 2017 systematic review confirmed that organisational culture and patient outcomes are consistently linked, but flagged a gap: the evidence rests on cross-sectional, self-report data rather than objective, point-in-time confirmation of change. This paper proposes OAPR as a complementary, auditable check — a way to objectively confirm whether a specific data point following a culture intervention is a genuine statistical outlier, rather than relying on visual judgement alone.</p>
+          <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7196979" target="_blank" rel="noopener" class="btn btn-gold btn-pulse-slow">Read the Full Paper on SSRN →</a>
+        </div>
       </div>
     </div>
   </section>
