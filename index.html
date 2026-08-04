@@ -159,6 +159,19 @@
   50% { box-shadow: 0 0 0 16px rgba(212,175,106,0); }
 }
 .btn-pulse-slow { animation: pulseGold 2.6s ease-in-out infinite; }
+
+/* ---------- Module completion badge ---------- */
+.module-badge {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold-300);
+  border: 1px solid var(--gold-400);
+  padding: 0.2rem 0.55rem;
+  margin: 0.4rem 0 0.9rem;
+}
 </style>
 
 <script type="application/ld+json">
@@ -376,21 +389,30 @@
         </div>
       </div>
 
-      <div class="card-grid cols-3" data-reveal>
+      <div class="card-grid cols-4" data-reveal>
         <div class="tool-card">
           <span class="tool-index">01</span>
           <h3>CPHQ Mastery Module</h3>
+          <span class="module-badge">Self-Paced · Certificate on Completion</span>
           <p>An interactive, exam-mapped study portal covering the full CPHQ blueprint — concepts, practice MCQs, and quick-reference notes in one place. It's open on a free trial, so you can explore the module before committing to your exam prep. CPHQ is one of the most recognized credentials in healthcare quality, and a structured, exam-aligned resource like this can make the real difference between guessing your way through and passing with confidence.</p>
           <a href="https://cphq-omac-notes.streamlit.app/" target="_blank" rel="noopener" class="btn btn-gold btn-blink">Start CPHQ Mastery Module Now</a>
         </div>
         <div class="tool-card">
           <span class="tool-index">02</span>
           <h3>Free ISO 9001 Module</h3>
+          <span class="module-badge">Self-Paced · Certificate on Completion</span>
           <p>A self-paced, interactive walkthrough of ISO 9001 fundamentals — clauses, QMS principles, and practical application — built for anyone preparing for audits, certification, or just getting up to speed on the standard.</p>
-          <a href="https://syedbaqir291-debug.github.io/Learn-ISO-9001---OMAC/" target="_blank" rel="noopener" class="btn btn-ghost">Explore Free ISO 9001</a>
+          <a href="https://vercel.com/omac-international/iso-9001-omac" target="_blank" rel="noopener" class="btn btn-ghost">Explore Free ISO 9001</a>
         </div>
         <div class="tool-card">
           <span class="tool-index">03</span>
+          <h3>Quantitative Techniques Module</h3>
+          <span class="module-badge">Self-Paced · Certificate on Completion</span>
+          <p>A self-paced learning module covering the core quantitative techniques used in quality and healthcare data work — statistical foundations, analysis methods, and applied problem-solving, built to strengthen the analytical skillset behind good quality decisions.</p>
+          <a href="https://quantitative-techniques-omac.vercel.app/" target="_blank" rel="noopener" class="btn btn-ghost">Explore Quantitative Techniques</a>
+        </div>
+        <div class="tool-card">
+          <span class="tool-index">04</span>
           <h3>Qualitypedia</h3>
           <p>A free reference library of 69+ quality tools across 10 categories — the right tool for the right problem, quickly.</p>
           <a href="https://syedbaqir291-debug.github.io/quality_pedia_v.1/" target="_blank" rel="noopener" class="btn btn-ghost">Explore Qualitypedia</a>
