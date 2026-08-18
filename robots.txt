@@ -1,0 +1,13 @@
+# Syed Muhammad Baqir (S M Baqir) — Quality Guru — Founder, OMAC International
+# Healthcare Quality, Patient Safety & Quality Guru Pakistan — https://syedbaqir291-debug.github.io/OMAC/
+
+User-agent: *
+Allow: /
+
+User-agent: bingbot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+Sitemap: https://syedbaqir291-debug.github.io/OMAC/sitemap.xml
